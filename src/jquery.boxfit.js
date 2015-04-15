@@ -46,6 +46,9 @@
         line_height:'100%' 
       };
       $.extend(settings, options);
+      
+      // reset display so measurements are correct
+      $(this).css('display', 'block');
 
       // take measurements
       if (settings.width) {
